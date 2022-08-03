@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main center ">
+        <form class="calculatorform" name="calculatorform">
+            <div class="screen">
+            <h3 class="title">Calculator</h3>
+      <input type="text" name="screen"  readonly>
+    </div>
+    <div class="btn_color">
+        <hr class="hr">
+    <div class="btn">
+        <button type="button" class="clearbtn" id="clear" value="Clear" name="Clear" onclick="cut()">Clear</button>
+    </div>
+    <div class="btnHead">
+    <div class="btn">
+        <button type="button" class="btn_desgin" value="7" name="num7" onclick="calculate( this)" >7</button>
+        <button type="button" class="btn_desgin" value="8" name="num8" onclick="calculate(this)" >8</button>
+        <button type="button" class="btn_desgin" value="9" name="num9" onclick="calculate(this)" >9</button>
+        <button type="button" class="btn_desgin bue_btn" value="+" name="num+" onclick="calculate(this)" >+</button>
+    </div>
+    <div class="btn">
+        <button type="button" class="btn_desgin" value="4" name="num4" onclick="calculate(this)" >4</button>
+        <button type="button" class="btn_desgin" value="5" name="num5" onclick="calculate(this)" >5</button>
+        <button type="button" class="btn_desgin" value="6" name="num6" onclick="calculate(this)" >6</button>
+        <button type="button" class="btn_desgin bue_btn" value="-" name="num-" onclick="calculate(this)" >-</button>
+    </div>
+    <div class="btn">
+        <button type="button" class="btn_desgin" value="1" name="num1" onclick="calculate(this)" >1</button>
+        <button type="button" class="btn_desgin" value="2" name="num2" onclick="calculate(this)" >2</button>
+        <button type="button"class="btn_desgin" value="3" name="num3" onclick="calculate(this)" >3</button>
+        <button type="button" class="btn_desgin bue_btn" value="*" name="num*" onclick="calculate(this)" >x</button>
+    </div>
+</div>
+<div class="btn">
+    <button type="button" class="btn_desgin" value="." name="num." onclick="calculate(this)" >.</button>
+    <button type="button" class="btn_desgin" value="0" name="num0" onclick="calculate(this)" >0</button>
+    <button type="button"class="btn_desgin" value="/" name="/" onclick="calculate(this)" >÷</button>
+    <button type="button" class="btn_desgin bue_btn" value="*" name="num*" onclick="result()" >=</button>
+</div>
+</div>
+     </form>
+    </div>
+    <script>
+        function calculate(e) {
+            calculatorform.screen.value += e.value;
+        }
+        function cut(){  
+            var clearbtn = document.getElementById('clear');
+            clearbtn.addEventListener("click",clear);
+            function clear() {
+            calculatorform.screen.value =null;
+                
+            }
+   }
+   function result() {
+    calculatorform.screen.value=eval(calculatorform.screen.value)
+   }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:hsl(0, 100%, 100%);
+}
+.main{
+   height: 567px; 
+   width: 250px;
+   background-color: #d3d3d3;
+   display: flex;
+   justify-content: center;
+   border-radius: 15px;
+   align-items: center;
+}
+.hr{
+    height: 2px;
+
+}
+.btn_color{
+    background-color: #ffff;
+}
+form{
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+.screen {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    height: 223px;
+}
+.screen input{
+    width: 18%;
+     display: flex;
+     position: absolute;
+    top: 30%;
+    left:41%;
+    height: 70px;
+    font-size: 30px;
+    border: none;
+    background: rgb(224, 224, 224);
+    cursor:default;
+    text-align: right;
+    color: black;
+    font-weight: bold;
+
+}
+.clearbtn{
+    width: 18%;
+    position: absolute;
+    top: 44%;
+    padding: 5px;
+    right: 41%;
+    color: red;
+    font-size: 20px;
+}
+button{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btnHead{
+    margin-top: 10px;
+    margin-left: -18px;
+}
+.center {
+    margin: auto;
+    padding: 10px;
+    margin-top: 45px;
+  }
+  .btn_desgin{
+    margin: auto;
+    font-size: 40px;
+    margin-left: 32px;
+    margin-top: 15px;
+
+    
+  }
+  .btn{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-left: -8px;
+    
+  }
+  .btn_end {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+ 
+  .bue_btn{
+    color: #21bfff;
+  }
+  button:hover{
+    color: gray;
+  }
+  .title{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 7px;
+
+  }
+  
